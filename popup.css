@@ -1,0 +1,124 @@
+body {
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #CDE0FA 100%);
+    width: 516px;
+    position: relative;
+    margin:0;
+    padding:15px;
+}
+
+.body-content{
+    position: relative;
+    z-index: 2;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px 0;
+    color:#797979;
+    font-size: 16px;
+}
+
+.tab:hover {
+    color:#003EA0;
+}
+
+.active-tab {
+    color:#003EA0;
+    cursor: auto;
+    font-weight: bold;
+}
+
+.popup-title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #003EA0
+}
+
+.tab-content {
+    display: none;
+}
+
+.active-tab-content {
+    display: block;
+}
+
+.tab-inner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.tab-inner-content-title {
+    text-align: center;
+    font-weight: bold;
+    color:#003EA0;
+    margin-bottom: 5px;
+}
+
+.tab-inner-content-subtitle {
+    text-align: center;
+    color:#797979;
+}
+
+.popup-header {
+    display: flex;
+    align-items: center;
+}
+
+.popup-header img {
+   margin-right: 13px;
+}
+
+.popup-date{
+    font-size: 16px;
+    color: #797979;
+    margin-top: 3px;
+}
+
+.lds-circle {
+    display: inline-block;
+    transform: translateZ(1px);
+}
+
+.lds-circle > div {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 8px;
+    border-radius: 50%;
+    background: #FEC701;
+    animation: lds-circle 4.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+@keyframes lds-circle {
+    0%, 100% {
+      animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+    }
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(1800deg);
+      animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+    }
+    100% {
+      transform: rotateY(3600deg);
+    }
+}

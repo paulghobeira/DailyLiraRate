@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <div class="body-content">
+
+      <div class="popup-header">
+        <img src="images/exchange.svg" width="46">
+        <div>
+          <div class="popup-title">Lebanon's Market Rates</div>
+          <div class="popup-date" id="popupDate"></div>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <div class="tab" id="marketTab">Market</div>
+        <div class="tab" id="sayrafaTab">Sayrafa</div>
+        <div class="tab" id="transferTab">Transfer</div>
+        <div class="tab" id="bankTab">Bank</div>
+        <div class="tab" id="officialTab">Official</div>
+      </div>
+      
+      <div id="loader" class="text-center"><div class="lds-circle"><div></div></div></div>
+
+      <div class="tab-content" id="marketContent">
+        <div class="tab-inner-content">
+          <div class="market-rate-buy" id="marketRateBuy"></div>
+          <div class="market-rate-sell" id="marketRateSell"></div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="sayrafaContent">
+        <div class="tab-inner-content">
+          <div class="sayrafa-rate" id="sayrafaRate"></div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="transferContent">
+        <div class="tab-inner-content">
+          <div class="transfer-rate" id="transferRate"></div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="bankContent">
+        <div class="tab-inner-content">
+          <div class="bank-rate" id="bankRate"></div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="officialContent">
+        <div class="tab-inner-content">
+          <div class="official-rate" id="officialRate"></div>
+        </div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
